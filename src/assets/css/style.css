@@ -1,0 +1,131 @@
+/*
+ Theme: shop_clothes
+ Version: 1.0.0
+ Author: Nguyen Tien Tuan
+*/
+/*
+    ========================Table of content=====================
+    1.Setting
+    2.Header
+        2.1 Header logo
+        2.2 Header menu
+        2.3 Header icon
+*/
+/*============================1.Setting=============================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Montserrat'; */
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: #c99947;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+a:hover{
+    outline: none;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4{
+    text-transform: uppercase;
+}
+p {
+    margin: 0 0 22px;
+}
+.text-primary{
+    color:#c99947 !important;
+}
+.PlayfairDisplay{
+    font-family: 'PlayfairDisplay';
+    font-style: italic;
+}
+/*=============================2.Header===========================*/
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    line-height: 90px;
+    position: relative;
+}
+/*=============================2.1 Header logo=====================*/
+.header__logo{}
+.header__right{
+    display: flex;
+}
+/*==============================2.2 Header menu====================*/
+.header__right-menu{
+    display: flex;
+}
+
+.menu__item{
+   margin: 0 20px;
+}  
+.menu__item>a{
+    text-transform: uppercase;
+    padding: 10px 0px;
+    color: #222;
+    position: relative;
+}
+.menu__item>a:before {
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    background-color: #c99947;
+    transition: all 0.4s ease-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+}
+.menu__item:hover>a{
+    color:#c99947;
+}
+.menu__item:hover>a::before{
+    width: 100%;
+}
+.sub__menu{
+    box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 17%);
+    padding: 30px;
+    width: 500px;
+    left:40%;
+    top:90px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s ease, visibility .4s linear 0s;
+}
+.menu__item:hover>.sub__menu{
+    visibility: visible;
+    opacity: 1;
+}
+/*================================2.3 Header icon===================*/
+.header__right-icon{
+    display: flex;
+}
+.header__right-icon .icon--ml{
+    margin-left: 20px;
+}
+.header__right-icon .icon--item{
+    font-size: 20px;
+    margin-bottom: 1px;
+} 
+
+
